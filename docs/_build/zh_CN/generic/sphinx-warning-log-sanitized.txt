@@ -1,0 +1,26 @@
+
+[91mConfiguration error:[39;49;00m
+There is a programmable error in your configuration file:
+
+Traceback (most recent call last):
+  File "C:\Users\femik\Documents\MyContent\ESP-IDF\esp-ota-update\docs\zh_CN\conf.py", line 10, in <module>
+    from conf_common import *  # noqa: F403,F401
+ModuleNotFoundError: No module named 'conf_common'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\femik\.espressif\python_env\idf5.0_py3.8_env\lib\site-packages\sphinx\config.py", line 332, in eval_config_file
+    exec(code, namespace)
+  File "C:\Users\femik\Documents\MyContent\ESP-IDF\esp-ota-update\docs\zh_CN\conf.py", line 15, in <module>
+    from conf_common import *  # noqa: F403,F401
+  File "C:\Users\femik\Documents\MyContent\ESP-IDF\esp-ota-update\docs\conf_common.py", line 1, in <module>
+    from esp_docs.conf_docs import *  # noqa: F403,F401
+  File "c:\users\femik\.espressif\python_env\idf5.0_py3.8_env\lib\site-packages\esp_docs\conf_docs.py", line 162, in <module>
+    'github_version': get_github_rev(),
+  File "c:\users\femik\.espressif\python_env\idf5.0_py3.8_env\lib\site-packages\esp_docs\get_github_rev.py", line 6, in get_github_rev
+    path = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD']).strip().decode('utf-8')
+  File "subprocess.py", line 411, in check_output
+  File "subprocess.py", line 512, in run
+subprocess.CalledProcessError: Command '['git', 'rev-parse', '--short', 'HEAD']' returned non-zero exit status 128.
+
